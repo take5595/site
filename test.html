@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height:200vh;
+        }
+        #target-id{
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="target-id">
+        <div>
+            bbbbbbbbbbbbbbbbbbb
+        </div>
+    </div>
+
+
+    <script>
+        // let li= [1,2,3,4,5,6]
+        const target=document.getElementById('target-id')
+        // console.log(target.textContent)
+
+        // const obserber = new IntersectionObserver(records =>{
+        //     records.forEach(entry =>{
+        //         console.log(entry.target.textContent    )
+        //     })
+            
+        // });
+
+        // obserber.observe(target,{
+        //     // attributes:true
+
+        // })
+
+        let gett = base => {
+            // console.log(base);
+            console.log(base.children);
+            // console.log(base.children[0].textContent);
+        }
+
+        gett(target)
+
+
+
+        
+    </script>
+    
+</body>
+</html>
